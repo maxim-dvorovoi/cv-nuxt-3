@@ -1,120 +1,157 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>CV Maxim Dvorovoi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<body class="w3-light-grey">
-
-<div class="w3-content w3-margin-top m-width">
-	<div class="w3-row-padding">
-		<div class="w3-third">
-			<div class="bg-white font-gray w3-card-4">
-				<div class="w3-display-container">
-					<img src="/img/avatar.jpg" style="width:100%" alt="Avatar">
-				</div>
-				<div class="w3-container">
-					<div>
-						<h2 class="name">Maxim Dvorovoi</h2>
-					</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<body onload="setTimeout(showPage, 1000)">
+	<div id="loader" class="loader">
+		<div class="center">
+			<div class="dot-1"></div>
+			<div class="dot-2"></div>
+			<div class="dot-3"></div>
+	   </div>
+	</div>
+	
+	<div style="display:none;" id="index" class="animate-bottom">
+		<div class="content">
+			<div class="main">
+				<img src="./img/avatar.jpg" alt="Maxim Dvorovoi" class="avatar">
+				<div class="padding20">
+					<h1>Maxim Dvorovoi</h1>
 					<hr>
-
-					<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PHP Developer</p>
-					<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kyiv, UKR</p>
-					<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>vmolo4nik@gmail.com</p>
-					<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+380950630179</p>
+					<p><i class="fas fa-briefcase"></i> PHP Developer</p>
+					<p><i class="fas fa-home"></i> Kyiv, Ukraine</p>
+					<p><i class="fas fa-envelope"></i> vmolo4nik@gmail.com</p>
+					<p><i class="fas fa-phone"></i> +380950630179</p>
 					<hr>
-
-					<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+					<h4><i class="fas fa-user-check"></i> Skills</h4>
 					<p>PHP</p>
-					<div class="w3-light-grey w3-round-xlarge w3-small">
-						<div class="w3-container w3-center w3-round-xlarge w3-teal w-90">90%</div>
-					</div>
-					<p>MySQL</p>
-					<div class="w3-light-grey w3-round-xlarge w3-small">
-						<div class="w3-container w3-center w3-round-xlarge w3-teal w-90">90%</div>
+					<div class="progress">
+						<span>90%</span>
+						<div class="done" style="width: 90%"></div>
 					</div>
 					<p>JavaScript</p>
-					<div class="w3-light-grey w3-round-xlarge w3-small">
-						<div class="w3-container w3-center w3-round-xlarge w3-teal w-85">85%</div>
+					<div class="progress">
+						<span>90%</span>
+						<div class="done" style="width: 90%"></div>
+					</div>
+					<p>MySQL</p>
+					<div class="progress">
+						<span>85%</span>
+						<div class="done" style="width: 85%"></div>
+					</div>
+					<p>VueJS</p>
+					<div class="progress">
+						<span>80%</span>
+						<div class="done" style="width: 80%"></div>
+					</div>
+					<p>ElasticSearch</p>
+					<div class="progress">
+						<span>60%</span>
+						<div class="done" style="width: 60%"></div>
 					</div>
 					<br>
-
-					<p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+					<hr>
+					<h4><i class="fas fa-globe-europe"></i> Languages</h4>
 					<p>Ukraine</p>
-					<div class="w3-light-grey w3-round-xlarge">
-						<div class="w3-round-xlarge w3-teal w-100 height-20"></div>
+					<div class="progress">
+						<div class="done" style="width: 100%"></div>
 					</div>
 					<p>Russian</p>
-					<div class="w3-light-grey w3-round-xlarge">
-						<div class="w3-round-xlarge w3-teal w-100 height-20"></div>
+					<div class="progress">
+						<div class="done" style="width: 100%"></div>
 					</div>
 					<p>English</p>
-					<div class="w3-light-grey w3-round-xlarge">
-						<div class="w3-round-xlarge w3-teal w-65 height-20"></div>
+					<div class="progress">
+						<div class="done" style="width: 70%"></div>
 					</div>
 					<br>
-				</div>
-			</div><br>
-		</div>
-		
-		<div class="w3-twothird">
-			<div class="w3-container w3-card w3-margin-bottom bg-white">
-				<h2 class="font-gray padding-15"><i class="fas fa-briefcase font-green padd-right-15"></i>Work Experience</h2>
-				<div class="w3-container">
-					<h5>Full-Stack Developer / semalt.com</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>Sept 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-					<p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-					<p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-					<hr>
-				</div>
-				<div class="w3-container">
-					<h5>Web Developer / hand-made-bymaxim.000webhostapp.com</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>Jun 2018 - Sept 2018</h6>
-					<p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-					<p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-					<hr>
-				</div>
-				<div class="w3-container">
-					<h5>Web Developer / imgurvmolo4nik.herokuapp.com</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>Mar 2018 - Jun 2018</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p><br>
+					<p class="caret-down"><i class="fas fa-caret-down "></i></p>
 				</div>
 			</div>
-
-			<div class="w3-container w3-card bg-white">
-				<h2 class="font-gray padding-15"><i class="fas fa-atom font-green padd-right-15"></i>Education</h2>
-				<div class="w3-container">
-					<h5>PHP Academy</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>2017 - 2018</h6>
+			
+			<div class="details">
+				<div class="work">
+					<h2><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h2>
+					<h4>
+						Full-Stack Developer / 
+						<a class="texr-decor" href="https://semalt.info" target="_blank" rel="noreferrer noorigin">semalt.com</a>
+					</h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> Sept 2018 - <span class="current">CURRENT</span></p>
+					<p>
+						I have worked with Vue.js framework and Highcharts as front-end developer.
+						<br><br>
+						As a back-end developer, I have acted with PHP, MySQL, ElasticSearch, Facebook API, Jira API and various Google API.
+					</p>
+					<hr>
+					<h4>
+						Full-Stack Developer / 
+						<a class="texr-decor" href="https://hand-made-bymaxim.000webhostapp.com" target="_blank" rel="noreferrer noorigin">hand-made.com</a>
+					</h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> Jun 2018 - Sept 2018</p>
+					<p>
+						This project is created on Symfony 3,4. It was a thesis work on courses PHP Academy.
+					</p>
+					<hr>
+					<h4>
+						Front-end Developer / 
+						<a class="texr-decor" href="https://resume-dvorovoi-maxim.herokuapp.com/" target="_blank" rel="noreferrer noorigin">resume</a>
+					</h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> May 2018 - Jun 2018</p>
+					<p>My first resume. Created on React.</p>
+				</div>
+				
+				<div class="education">
+					<h2><i class="fas fa-graduation-cap"></i> EDUCATION</h2>
+					<h4><a href="https://php-academy.kiev.ua/" target="_blank" rel="noreferrer noorigin">PHP Academy</a></h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> 2017 - 2018</p>
 					<p>Junior Web Developer</p>
 					<hr>
-				</div>
-				<div class="w3-container">
-					<h5>State University of Telecommunications</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>2014 - 2018</h6>
-					<p>Specialist</p>
+					<h4><a href="http://www.dut.edu.ua/ru/" target="_blank" rel="noreferrer noorigin">State University of Telecommunications</a></h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> 2014 - 2018</p>
+					<p>IT Specialist</p>
 					<hr>
+					<h4><a href="https://sites.google.com/view/kkz" target="_blank" rel="noreferrer noorigin">Kiev College of Communication</a></h4>
+					<p class="green"><i class="fas fa-calendar-alt"></i> 2011 - 2014</p>
+					<p>Junior IT Specialist</p>
 				</div>
-				<div class="w3-container">
-					<h5>Kiev College of Communication</h5>
-					<h6><i class="fas fa-calendar-alt marg-right-15"></i>2011 - 2014</h6>
-					<p>Junior Specialist</p><br>
+				
+				<div class="about">
+					<h2><i class="fas fa-user-tag"></i> ABOUT ME</h2>
+					<h5>
+						My name is Maxim Dvorovoi, and I’m currently looking for a job in IT.<br>
+						I have 1 years of experience working in Semalt company. I have a bachelor’s degree in IT education.<br>
+						I am dedicated, outgoing, and a team player. I have my own site on the internet and I have done many programues.<br>
+					</h5>
 				</div>
 			</div>
 		</div>
+		
+		<div class="footer">
+			<h3>
+				FIND ME ON SOCIAL MEDIA
+				<br>
+				<i class="fas fa-caret-down"></i>
+				<br>
+				<a href="https://www.instagram.com/d_mas9" target="_blank" rel="noreferrer noorigin"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/maxim.dvorovoy" target="_blank" rel="noreferrer noorigin"><i class="fab fa-facebook-square"></i></a>
+				<a 
+					href="https://ua.linkedin.com/in/%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC-%D0%B4%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-04978b170"
+					target="_blank"
+					rel="noreferrer noorigin"
+				><i class="fab fa-linkedin"></i></a>
+			</h3>
+		</div>
 	</div>
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-	<p>Find me on social media.</p>
-	<i class="fab fa-instagram w3-hover-opacity"></i>
-	<i class="fab fa-facebook-square w3-hover-opacity"></i>
-	<i class="fab fa-linkedin w3-hover-opacity"></i>
-</footer>
-
+	
+	<script>
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("index").style.display = "block";
+		}
+	</script>
 </body>
 </html>
