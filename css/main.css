@@ -180,6 +180,19 @@ a:hover {
 	left: 45%;
 }
 
+.prog-text {
+	position: absolute;
+	top: 2px;
+	width: 100%;
+	opacity: 0.8;
+	transition: .3s;
+    cursor: context-menu;
+}
+
+.prog-text:hover {
+	opacity: 1;
+}
+
 .done {
 	background-color: #009688;
 	height: 18px;
@@ -192,12 +205,32 @@ a:hover {
 	border-radius: 5px;
 }
 
+.github {
+	font-size: 14px;
+	font-weight: 400;
+	transition: .5s;
+}
+
+.github:hover {
+	opacity: 1;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
 .green {
 	color: #009688;
 }
 
+.context {
+	cursor: context-menu;
+}
+
 .padding20 {
 	padding: 20px;
+}
+
+.margin-right5 {
+	margin-right: 5px;
 }
 
 .caret-down {
@@ -348,13 +381,13 @@ a:hover {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
 	.content {
 		margin-bottom: 10px;
 	}
 	
 	.main {
-		max-width: 300px;
+		max-width: 270px;
 		margin-right: 0;
 	}
 	
@@ -389,10 +422,12 @@ a:hover {
 	
 	h4 {
 		font-size: 16px;
+		line-height: 25px;
 	}
 	
 	h5 {
 		font-size: 14px;
+		line-height: 20px;
 	}
 	
 	p {
@@ -400,7 +435,7 @@ a:hover {
 	}
 }
 
-@media (max-width: 630px) {
+@media (max-width: 649px) {
 	.main {
 		max-width: 450px;
 		float: none;
