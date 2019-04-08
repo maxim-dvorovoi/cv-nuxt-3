@@ -24,6 +24,7 @@ h2 {
 	color: dimgray;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: 0.5s;
 }
 
 h2 i {
@@ -112,7 +113,12 @@ a:hover {
 	background-color: white;
 	float: left;
 	margin:7px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.08);
+	transition: 0.3s;
+}
+
+.main:hover {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25), 0 2px 15px 0 rgba(0,0,0,0.2);
 }
 
 .main p {
@@ -128,21 +134,36 @@ a:hover {
 	background-color: white;
 	margin: 7px;
 	padding: 40px 40px 20px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.08);
+	transition: 0.3s;
+}
+
+.work:hover {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25), 0 2px 15px 0 rgba(0,0,0,0.2);
 }
 
 .education {
 	background-color: white;
 	margin: 7px;
 	padding: 40px 40px 20px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.08);
+	transition: 0.3s;
+}
+
+.education:hover {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25), 0 2px 15px 0 rgba(0,0,0,0.2);
 }
 
 .about {
 	background-color: white;
 	margin: 7px;
 	padding: 40px 40px 20px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.08);
+	transition: 0.3s;
+}
+
+.about:hover {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25), 0 2px 15px 0 rgba(0,0,0,0.2);
 }
 
 .footer {
@@ -183,14 +204,8 @@ a:hover {
 .prog-text {
 	position: absolute;
 	top: 2px;
-	width: 100%;
-	opacity: 0.8;
-	transition: .3s;
+	width: 100%;;
     cursor: context-menu;
-}
-
-.prog-text:hover {
-	opacity: 1;
 }
 
 .done {
@@ -199,16 +214,23 @@ a:hover {
 }
 
 .current {
+    color: #009688;
+	padding: 2px 5px;
+	border-radius: 5px;
+	border: 1px solid #009688;
+}
+
+.smallBtn {
 	background-color: #009688;
     color: white;
-	padding: 4px;
+	padding: 4px 7px;
 	border-radius: 5px;
 }
 
 .github {
 	font-size: 14px;
 	font-weight: 400;
-	transition: .5s;
+	transition: .3s;
 }
 
 .github:hover {
@@ -471,8 +493,16 @@ a:hover {
 		padding-top: 25px;
 	}
 	
+	.main:hover {
+		box-shadow: none;
+	}
+	
 	.work {
 		margin: 0;
+		box-shadow: none;
+	}
+	
+	.work:hover {
 		box-shadow: none;
 	}
 	
@@ -481,8 +511,16 @@ a:hover {
 		box-shadow: none;
 	}
 	
+	.education:hover {
+		box-shadow: none;
+	}
+	
 	.about {
 		margin: 0;
+		box-shadow: none;
+	}
+	
+	.about:hover {
 		box-shadow: none;
 	}
 	
