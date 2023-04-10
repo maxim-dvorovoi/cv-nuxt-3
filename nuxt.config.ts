@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-    ssr: false,
     app: {
         baseURL: '/cv/',
         head: {
