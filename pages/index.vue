@@ -99,14 +99,16 @@
 				<div class="projects">
 					<div v-for="item in projects.list">
 						<a :href="item.link" target="_blank" rel="noreferrer noopener">
-							<img v-if="item.key === 'trustburn'" src="/trustburn-min.png">
-							<img v-if="item.key === 'worldfamous'" src="/worldfamous-me-min.png">
-							<img v-if="item.key === 'gcadvert'" src="/gcadvert-com-min.png">
-							<img v-if="item.key === 'wedding'" src="/wedding-min.jpg">
-							<img v-if="item.key === 'dont-touch-the-blocks'" src="/dont-touch-the-blocks-min.png">
-							<img v-if="item.key === 'calculator'" src="/calculator-min.png">
+							<img v-if="item.key === 'trustburn'" src="/trustburn-min.png" :alt="item.name">
+							<img v-if="item.key === 'worldfamous'" src="/worldfamous-me-min.png" :alt="item.name">
+							<img v-if="item.key === 'gcadvert'" src="/gcadvert-com-min.png" :alt="item.name">
+							<img v-if="item.key === 'wedding'" src="/wedding-min.jpg" :alt="item.name">
+							<img v-if="item.key === 'dont-touch-the-blocks'" src="/dont-touch-the-blocks-min.png" :alt="item.name">
+							<img v-if="item.key === 'calculator'" src="/calculator-min.png" :alt="item.name">
+
+							<h4>{{ item.name }}</h4>
 						</a>
-						<h4>{{ item.name }}</h4>
+
 						<p>{{ item.description }}</p>
 					</div>
 				</div>
