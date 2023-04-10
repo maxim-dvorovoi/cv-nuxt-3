@@ -99,12 +99,12 @@
 				<div class="projects">
 					<div v-for="item in projects.list">
 						<a :href="item.link" target="_blank" rel="noreferrer noopener">
-							<img v-if="item.key === 'trustburn'" src="/trustburn-min.png" :alt="item.name">
-							<img v-if="item.key === 'worldfamous'" src="/worldfamous-me-min.png" :alt="item.name">
-							<img v-if="item.key === 'gcadvert'" src="/gcadvert-com-min.png" :alt="item.name">
-							<img v-if="item.key === 'wedding'" src="/wedding-min.jpg" :alt="item.name">
-							<img v-if="item.key === 'dont-touch-the-blocks'" src="/dont-touch-the-blocks-min.png" :alt="item.name">
-							<img v-if="item.key === 'calculator'" src="/calculator-min.png" :alt="item.name">
+							<img v-if="item.key === 'trustburn'" src="/images/trustburn-min.png" :alt="item.name">
+							<img v-if="item.key === 'worldfamous'" src="/images/worldfamous-me-min.png" :alt="item.name">
+							<img v-if="item.key === 'gcadvert'" src="/images/gcadvert-com-min.png" :alt="item.name">
+							<img v-if="item.key === 'wedding'" src="/images/wedding-min.jpg" :alt="item.name">
+							<img v-if="item.key === 'dont-touch-the-blocks'" src="/images/dont-touch-the-blocks-min.png" :alt="item.name">
+							<img v-if="item.key === 'calculator'" src="/images/calculator-min.png" :alt="item.name">
 
 							<h4>{{ item.name }}</h4>
 						</a>
@@ -306,7 +306,7 @@ const socialMedia = {
 
 	.banner {
 		position: fixed;
-		background: url(/me-min.jpg);
+		background: url(/images/me-min.jpg);
 		background-size: cover;
 		background-position-x: 20%;
 		height: 100vh;
