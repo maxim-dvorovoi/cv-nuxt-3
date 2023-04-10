@@ -2,9 +2,11 @@
 	<div class="header">
 		<input type="checkbox" id="menu-toggle">
 		<label for="menu-toggle" class="burger">
-			<div></div>
-			<div></div>
-			<div></div>
+			<div class="menu-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</label>
 
 		<ul class="menu">
@@ -79,19 +81,21 @@ function scrollToElementById(id) {
 				transform: scale(1, 1);
 			}
 
-			&:checked ~ .burger {
-				div:nth-child(1) {
-					transform: rotate(135deg) translateY(-3.5px) translateX(3.5px);
-					-webkit-transform: rotate(135deg) translateY(-3.5px) translateX(3.5px);
+			&:checked ~ .burger .menu-icon {
+				span:nth-child(1) {
+					top: 6px;
+					transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
 				}
 
-				div:nth-child(2) {
+				span:nth-child(2) {
 					opacity: 0;
 				}
 
-				div:nth-child(3) {
-					transform: rotate(-135deg) translateY(3.5px) translateX(3.5px);
-					-webkit-transform: rotate(-135deg) translateY(3.5px) translateX(3.5px);
+				span:nth-child(3) {
+					top: 6px;
+					transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
 				}
 			}
 		}
@@ -106,16 +110,14 @@ function scrollToElementById(id) {
 
 			.burger {
 				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
 				align-items: center;
-				width: 30px;
-				height: 30px;
+				width: 35px;
+				height: 35px;
 				padding: 8px 6px;
 				background-color: white;
 				border: 1px solid lightgray;
 				box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
-				border-radius: 4px;
+				border-radius: 6px;
 				box-sizing: border-box;
 				position: fixed;
 				top: 8px;
@@ -124,30 +126,32 @@ function scrollToElementById(id) {
 				overflow: hidden;
 				z-index: 200;
 
-				div {
-					width: 16px;
-					height: 2px;
-					background-color: black;
-					border-radius: 4px;
-					opacity: 1;
-					left: 0;
-					transform: rotate(0deg);
-					transition: .25s ease-in-out;
+				.menu-icon {
+					margin: 20px auto;
+					width: 20px;
+					height: 14px;
+					cursor: pointer;
+					position: relative;
 
-					&:hover {
-						opacity: 1;
-					}
+					span {
+						background-color: black;
+						height: 2px;
+						position: absolute;
+						width: 100%;
+						left: 0;
+						transition: 0.3s ease;
 
-					&:nth-child(1) {
-						top: 0;
-					}
+						&:nth-child(1) {
+							top: 0;
+						}
 
-					&:nth-child(2) {
-						top: 6px;
-					}
+						&:nth-child(2) {
+							top: 6px;
+						}
 
-					&:nth-child(3) {
-						top: 12px;
+						&:nth-child(3) {
+							top: 12px;
+						}
 					}
 				}
 			}
