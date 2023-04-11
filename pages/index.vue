@@ -320,7 +320,6 @@ const socialMedia = {
 			position: absolute;
 			top: 15%;
 			padding: 20px;
-			text-shadow: 0 0 30px black;
 
 			h1 {
 				color: white;
