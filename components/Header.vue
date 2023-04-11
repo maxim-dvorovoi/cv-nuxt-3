@@ -34,6 +34,7 @@ function scrollToElementById(id) {
 
 <style lang="scss" scoped>
 	.header {
+		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 		height: 40px;
@@ -114,7 +115,9 @@ function scrollToElementById(id) {
 				width: 35px;
 				height: 35px;
 				padding: 8px 6px;
-				background-color: white;
+				background-color: rgba(255, 255, 255, 0.7);
+				backdrop-filter: saturate(180%) blur(10px);
+				-webkit-backdrop-filter: saturate(180%) blur(10px);
 				border: 1px solid lightgray;
 				box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
 				border-radius: 6px;

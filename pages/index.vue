@@ -157,8 +157,9 @@ const skills = {
 		{ name: 'VueJS', years: 4, level: 85 },
 		{ name: 'NuxtJS', years: 3, level: 85 },
 		{ name: 'ElasticSearch', years: 3, level: 80 },
-		{ name: 'MongoDB', years: 2, level: 70 },
 		{ name: 'Nginx', years: 3, level: 70 },
+		{ name: 'NodeJS', years: 2, level: 65 },
+		{ name: 'MongoDB', years: 2, level: 50 },
 	]
 };
 
